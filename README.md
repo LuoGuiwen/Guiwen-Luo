@@ -4,7 +4,8 @@ I am a PhD student in the [ComSec](https://uwaterloo.ca/communications-security-
 
 #### - Updates
 
-*Fall 2021*, Pass the comprehensive II: PhD proposal examination
+*Fall 2021*, pass the comprehensive exam II: Comprehensive PhD Proposal Examination
+*Fall 2020*, pass the comprehensive exam I: Comprehensive Background Examination
 
 #### - Email
 
@@ -12,4 +13,5 @@ guiwen dot luo at uwaterloo dot ca
 
 #### - Miscellaneous
 
-*Spring 2020: ECE 458 - Computer Security*, Teaching Assistant
+*Spring 2020*, teaching assistant in *ECE 458 - Computer Security*
+*Winter 2020*, volunteer in *ECE Volunteer Mentorship Program*
