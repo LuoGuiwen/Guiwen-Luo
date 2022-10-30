@@ -37,6 +37,6 @@ See [Guiwen Luo's dblp](https://dblp.org/pid/237/4756.html).
 
 *Winter 2020*, volunteer in *ECE Volunteer Mentorship Program*
 
-#### - Hobbies
+#### - Hobbies 
 
-I love leisure cycling, long-distance running, rock climbing and swimming. I did a lot of hiking and swimming recently (i.e., 2022).
+I love leisure cycling, long-distance running, rock climbing and swimming. I did a lot of hiking and swimming recently (i.e., 2022). Check [the gallery](https://github.com/LuoGuiwen/Guiwen-Luo/blob/main/pics/pics%20intro.md).
