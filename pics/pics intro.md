@@ -1,5 +1,6 @@
 To be revised.
 
-Image test
-
-<img align="top" src="rockclimbing1.jpeg">
+<p float="left">
+  <img src="rockclimbing1.JPG" height="800" /> 
+  <img src="rockclimbing1.JPG" height="800" />
+</p>
