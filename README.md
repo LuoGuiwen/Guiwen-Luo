@@ -36,3 +36,7 @@ See [Guiwen Luo's dblp](https://dblp.org/pid/237/4756.html).
 *Spring 2020*, teaching assistant in *ECE 458 - Computer Security*
 
 *Winter 2020*, volunteer in *ECE Volunteer Mentorship Program*
+
+#### - Hobbies
+
+I love leisure cycling, long-distance running, rock climbing and swimming. I did a lot of hiking and swimming recently (i.e., 2022).
