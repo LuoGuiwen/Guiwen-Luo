@@ -10,7 +10,7 @@ I am now working on *pairing-based cryptography*, *zkSNARKs* and *privacy-preser
 
 *Fall 2020*, passed the comprehensive exam I: Comprehensive Background Examination
 
-*Fall 2019*, started my PhD program at University of Waterloo.
+*Fall 2019*, started my PhD program at University of Waterloo
 
 *Summer 2019*, completed my MASc at Chinese Academy of Sciences, China
 
