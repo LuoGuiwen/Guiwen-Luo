@@ -25,7 +25,7 @@ guiwen dot luo at uwaterloo dot ca
 
 1. Luo, G., Fu, S., & Gong, G. (2022, December). [Speeding Up Multi-Scalar Multiplication over Fixed Points Towards Efficient zkSNARKs (preprint)](https://github.com/LuoGuiwen/Guiwen-Luo/blob/main/publications/TCHES%20Oct%20modification%2020221223.pdf). (Accepted paper) in IACR Transactions on Cryptographic Hardware and Embedded Systems (TCHES2023_2).
 
-1. Luo, G., & Gong, G. (2022, December). [On the Optimization of Pippenger's Bucket Method with Precomputation (preprint)](https:). (Accepted paper) in Stinson66 - New Advances in Designs, Codes and Cryptography.
+1. Luo, G., & Gong, G. (2022, December). [On the Optimization of Pippenger's Bucket Method with Precomputation (preprint)](https://github.com/LuoGuiwen/Guiwen-Luo/blob/main/publications/stinson66%20publish%20version%20using%20recommanded%20template.pdf). (Accepted paper) in Stinson66 - New Advances in Designs, Codes and Cryptography.
 
 1. Luo, G., Fu, S., & Gong, G. (2021, December). [Updatable Linear Map Commitments and Their Applications in Elementary Databases](https://github.com/LuoGuiwen/Guiwen-Luo/blob/main/publications/Updatable_Linear_Map_Commitments_and_Their_Applications_in_Elementary_Databases.pdf). In 2021 18th International Conference on Privacy, Security and Trust (PST) (pp. 1-6). IEEE.
 
