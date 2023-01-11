@@ -23,7 +23,8 @@ guiwen dot luo at uwaterloo dot ca
 
 #### - Publications
 
-1. Luo, G., Fu, S., & Gong, G. (2022, December). [Updatable Linear Map Commitments and Their Applications in Elementary Databases](). (Accepted paper) in IACR Transactions on Cryptographic Hardware and Embedded Systems (TCHES2023_2).
+1. Luo, G., Fu, S., & Gong, G. (2022, December). [Speeding Up Multi-Scalar Multiplication over
+2 Fixed Points Towards Efficient zkSNARKs](). (Accepted paper) in IACR Transactions on Cryptographic Hardware and Embedded Systems (TCHES2023_2).
 
 1. Luo, G., Fu, S., & Gong, G. (2021, December). [Updatable Linear Map Commitments and Their Applications in Elementary Databases](https://github.com/LuoGuiwen/Guiwen-Luo/blob/main/publications/Updatable_Linear_Map_Commitments_and_Their_Applications_in_Elementary_Databases.pdf). In 2021 18th International Conference on Privacy, Security and Trust (PST) (pp. 1-6). IEEE.
 
