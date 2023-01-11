@@ -29,7 +29,7 @@ guiwen dot luo at uwaterloo dot ca
 
 1. Yi, H., Luo, G., & Lin, D. (2019, April). [Faster Scalar Multiplication on the x-Line: Three-Dimensional GLV Method with Three-Dimensional Differential Addition Chains](https://github.com/LuoGuiwen/Guiwen-Luo/blob/main/publications/Codes%2C%20Cryptology%20and%20Information%20Security.pdf). In International Conference on Codes, Cryptology, and Information Security (pp. 236-253). Springer, Cham.
 
-1. 
+1. Luo, G., & Chen, X. (2018, December). [Searching BN Curves for SM9](https://github.com/LuoGuiwen/Guiwen-Luo/blob/main/publications/Searching%20BN%20Curves%20for%20SM9.pdf). In International Conference on Information Security and Cryptology (pp. 554-567). Springer, Cham.
 
 You may also like to check [Guiwen Luo's dblp](https://dblp.org/pid/237/4756.html).
 
