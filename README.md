@@ -25,7 +25,7 @@ guiwen dot luo at uwaterloo dot ca
 
 1. Luo, G., Fu, S., & Gong, G. (2021, December). [Updatable Linear Map Commitments and Their Applications in Elementary Databases](https://github.com/LuoGuiwen/Guiwen-Luo/blob/main/publications/Updatable_Linear_Map_Commitments_and_Their_Applications_in_Elementary_Databases.pdf). In 2021 18th International Conference on Privacy, Security and Trust (PST) (pp. 1-6). IEEE.
 
-1. 
+1. Yi, H., Luo, G., & Lin, D. (2019, April). [Faster Scalar Multiplication on the x-Line: Three-Dimensional GLV Method with Three-Dimensional Differential Addition Chains](https://github.com/LuoGuiwen/Guiwen-Luo/blob/main/publications/Codes%2C%20Cryptology%20and%20Information%20Security.pdf). In International Conference on Codes, Cryptology, and Information Security (pp. 236-253). Springer, Cham.
 
 You may alos like to check [Guiwen Luo's dblp](https://dblp.org/pid/237/4756.html).
 
