@@ -37,7 +37,7 @@ guiwen dot luo at uwaterloo dot ca
 
 You may also like to check [Guiwen Luo's Google Scholar](https://scholar.google.com/citations?hl=en&user=kEuubvwAAAAJ).
 
-#### - Miscellaneous
+#### - Teaching
 
 *Winter 2023*, teaching assistant in *ECE 409 - Cryptography and System Security*
 
