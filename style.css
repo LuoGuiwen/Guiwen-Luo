@@ -9,8 +9,8 @@ body {
 
 /* Style the header */
 header {
-    background-color: #d3c2c2;
-    color: rgb(255, 255, 255);
+    background-color: #ddd;
+    color: rgb(0, 0, 0);
     padding: 20px;
 }
 
@@ -62,8 +62,8 @@ a:hover {
 
 /* Style the footer */
 footer {
-    background-color: #d3c2c2;
-    color: white;
+    background-color: #ddd;
+    color: rgb(0, 0, 0);
     padding: 20px;
     text-align: center;
 }
