@@ -31,6 +31,8 @@ guiwen.luo@uwaterloo.ca
 
 #### - Publications
 
+1. Luo, G., & Gong, G. (2023, May). [Fast computation of multi-scalar multiplication for pairing-based zkSNARK applications](https://ieeexplore.ieee.org/abstract/document/10174952). In 2023 International Conference on Blockchain and Cryptocurrency (ICBC), (pp. 1-5), IEEE.
+
 1. Luo, G., Fu, S., & Gong, G. (2022, December). [Speeding Up Multi-Scalar Multiplication over Fixed Points Towards Efficient zkSNARKs](https://tches.iacr.org/index.php/TCHES/article/view/10287). In IACR Transactions on Cryptographic Hardware and Embedded Systems (TCHES2023_2).
 
 1. Luo, G., & Gong, G. (2022, December). [On the Optimization of Pippenger's Bucket Method with Precomputation (preprint)](https://github.com/LuoGuiwen/Guiwen-Luo/blob/main/publications/stinson66%20publish%20version%20using%20recommanded%20template.pdf). (Accepted paper) in Stinson66 - New Advances in Designs, Codes and Cryptography.
