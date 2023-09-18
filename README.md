@@ -1,10 +1,18 @@
 <img align="right" src="smallguiwen.jpeg">
 
-I am a PhD student in the [ComSec](https://uwaterloo.ca/communications-security-lab/) lab at University of Waterloo under the supervision of Prof. [Guang Gong](https://uwaterloo.ca/scholar/ggong). I got my MASc in Institute of Information Engineering from [Chinese Academy of Sciences](https://english.cas.cn/). I received my BS in Faculty of Mathematics from [Fudan University](https://www.fudan.edu.cn/en/).
+[Updated on Sep 18, 2023]
 
-I am now working on *pairing-based cryptography*, *zkSNARKs* and *privacy-preserving blockchains*.
+I recently defended my PhD thesis and started a short term post-doc at University of Waterloo. 
+
+Before that, I was a PhD student in the [ComSec](https://uwaterloo.ca/communications-security-lab/) lab at University of Waterloo under the supervision of Prof. [Guang Gong](https://uwaterloo.ca/scholar/ggong). I got my MASc in Institute of Information Engineering from [Chinese Academy of Sciences](https://english.cas.cn/). I received my BS in Faculty of Mathematics from [Fudan University](https://www.fudan.edu.cn/en/).
+
+I am now working on *pairing-based cryptography*, *zkSNARKs* & *privacy-preserving blockchains*, *Fully homomorphic encryptions*, and *post-quantum cryptography*.
 
 #### - Updates
+
+*Fall 2023*, Starting from Sep 1, I commenced a short term post-doc in ECE, University of Waterloo. This position will end on March 31, 2024. I am open to have a new position.
+
+*Summer 2023*, I defended my PhD thesis [[Link to my thesis](https://uwspace.uwaterloo.ca/bitstream/handle/10012/19626/Luo_Guiwen.pdf?sequence=3&isAllowed=y)]
 
 *Fall 2021*, passed the comprehensive exam II: Comprehensive PhD Proposal Examination
 
@@ -19,7 +27,7 @@ I am now working on *pairing-based cryptography*, *zkSNARKs* and *privacy-preser
 
 #### - Email
 
-guiwen dot luo at uwaterloo dot ca
+guiwen.luo@uwaterloo.ca
 
 #### - Publications
 
@@ -53,4 +61,4 @@ You may also like to check [Guiwen Luo's Google Scholar](https://scholar.google.
 
 #### - Hobbies 
 
-I love leisure cycling, long-distance running, rock climbing and swimming. I did a lot of hiking and swimming recently (i.e., 2022).
+I love leisure cycling, long-distance running, rock climbing and swimming. 
