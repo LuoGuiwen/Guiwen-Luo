@@ -10,7 +10,7 @@ I am now working on *pairing-based cryptography*, *zkSNARKs* & *privacy-preservi
 
 #### - Updates
 
-*Fall 2023*, Starting from Sep 1, I commenced a short term post-doc in ECE, University of Waterloo. This position will end on March 31, 2024. I am open to have a new position.
+*Fall 2023*, starting from Sep 1, I commenced a short term post-doc in ECE, University of Waterloo. This position will end on March 31, 2024. I am open to have a new position.
 
 *Summer 2023*, I defended my PhD thesis [[Link to my thesis](https://uwspace.uwaterloo.ca/bitstream/handle/10012/19626/Luo_Guiwen.pdf?sequence=3&isAllowed=y)]
 
