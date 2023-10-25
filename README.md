@@ -1,7 +1,5 @@
 <img align="right" src="smallguiwen.jpeg">
 
-[Updated on Sep 18, 2023]
-
 I recently defended my PhD thesis and started a short term post-doc at University of Waterloo. 
 
 Before that, I was a PhD student in the [ComSec](https://uwaterloo.ca/communications-security-lab/) lab at University of Waterloo under the supervision of Prof. [Guang Gong](https://uwaterloo.ca/scholar/ggong). I got my MASc in Institute of Information Engineering from [Chinese Academy of Sciences](https://english.cas.cn/). I received my BS in Faculty of Mathematics from [Fudan University](https://www.fudan.edu.cn/en/).
@@ -64,3 +62,5 @@ You may also like to check [Guiwen Luo's Google Scholar](https://scholar.google.
 #### - Hobbies 
 
 I love leisure cycling, long-distance running, rock climbing and swimming. 
+
+[Updated on Sep 18, 2023]
