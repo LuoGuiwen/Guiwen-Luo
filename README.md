@@ -1,6 +1,6 @@
 <img align="right" src="smallguiwen.jpeg">
 
-I recently joined Quantstamp/Zircuit, working as a research engineer on GPU optimization and Ethereum rollup system. 
+I recently joined Quantstamp/[Zircuit](https://www.zircuit.com/), working as a research engineer on arithmetic GPU optimization and Ethereum rollup system. 
 
 Before that, I was a PhD student in the [ComSec](https://uwaterloo.ca/communications-security-lab/) lab at University of Waterloo under the supervision of Prof. [Guang Gong](https://uwaterloo.ca/scholar/ggong). I got my MASc in Institute of Information Engineering from [Chinese Academy of Sciences](https://english.cas.cn/). I received my BS in Faculty of Mathematics from [Fudan University](https://www.fudan.edu.cn/en/).
 
