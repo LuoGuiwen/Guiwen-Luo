@@ -4,7 +4,7 @@ I recently joined Quantstamp/[Zircuit](https://www.zircuit.com/), working as a r
 
 Before that, I was a PhD student in the [ComSec](https://uwaterloo.ca/communications-security-lab/) lab at University of Waterloo under the supervision of Prof. [Guang Gong](https://uwaterloo.ca/scholar/ggong). I got my MASc in Institute of Information Engineering from [Chinese Academy of Sciences](https://english.cas.cn/). I received my BS in Faculty of Mathematics from [Fudan University](https://www.fudan.edu.cn/en/).
 
-I am now working on *pairing-based cryptography*, *zkSNARKs* & *privacy-preserving blockchains*, *Fully homomorphic encryptions*, and *post-quantum cryptography*.
+My researh work primarily focuses on *pairing-based cryptography*, *zkSNARKs* & *privacy-preserving blockchains*. I am also interested in *Fully homomorphic encryptions*, and *post-quantum cryptography*.
 
 #### - Updates
 *Spring 2024*, I joined Zircuit as a research engineer.
