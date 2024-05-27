@@ -4,7 +4,7 @@ I recently joined Quantstamp/[Zircuit](https://www.zircuit.com/), working as a r
 
 Before that, I was a PhD student in the [ComSec](https://uwaterloo.ca/communications-security-lab/) lab at University of Waterloo under the supervision of Prof. [Guang Gong](https://uwaterloo.ca/scholar/ggong). I got my MASc in Institute of Information Engineering from [Chinese Academy of Sciences](https://english.cas.cn/). I received my BS in Faculty of Mathematics from [Fudan University](https://www.fudan.edu.cn/en/).
 
-My researh work primarily focuses on *pairing-based cryptography*, *zkSNARKs* & *privacy-preserving blockchains*. I am also interested in *Fully homomorphic encryptions*, and *post-quantum cryptography*.
+My researh work primarily focuses on *pairing-based cryptography*, *zkSNARKs* & *privacy-preserving blockchains*. I am also interested in *Fully homomorphic encryptions* and *post-quantum cryptography*.
 
 #### - Updates
 *Spring 2024*, I joined Zircuit as a research engineer.
@@ -57,9 +57,9 @@ I love leisure cycling, long-distance running, rock climbing and swimming.
 You can check my PhD thesis via [[Link to my thesis](https://uwspace.uwaterloo.ca/bitstream/handle/10012/19626/Luo_Guiwen.pdf?sequence=3&isAllowed=y)]
 
 
-*Page 21* "Silimar" should be "Similar".
+*Page 21*, "Silimar" should be "Similar".
 
-*Page 52* Inside Algorithm 7, change the B_0 to B_1 in Line 3 and Line 6. Specifically, 
+*Page 52*, Inside Algorithm 7, change the B_0 to B_1 in Line 3 and Line 6. Specifically, 
 Algorithm 7 Line 3 should be “if i is in B_1 and q - 2i is in B_1 then”.
 Algorithm 7 Line 6 should be “if i is in B_1 and q - 3i is in B_1 then”.
 
