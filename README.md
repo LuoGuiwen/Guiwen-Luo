@@ -1,14 +1,15 @@
 <img align="right" src="smallguiwen.jpeg">
 
-I recently defended my PhD thesis and started a short term post-doc at University of Waterloo. 
+I recently joined Quantstamp/Zircuit, working as a research engineer on GPU optimization and Ethereum rollup system. 
 
 Before that, I was a PhD student in the [ComSec](https://uwaterloo.ca/communications-security-lab/) lab at University of Waterloo under the supervision of Prof. [Guang Gong](https://uwaterloo.ca/scholar/ggong). I got my MASc in Institute of Information Engineering from [Chinese Academy of Sciences](https://english.cas.cn/). I received my BS in Faculty of Mathematics from [Fudan University](https://www.fudan.edu.cn/en/).
 
 I am now working on *pairing-based cryptography*, *zkSNARKs* & *privacy-preserving blockchains*, *Fully homomorphic encryptions*, and *post-quantum cryptography*.
 
 #### - Updates
+*Spring 2024*, I joined Zircuit as a research engineer.
 
-*Fall 2023*, Starting from Sep 1, I commenced a short term post-doc in ECE, University of Waterloo. This position will end on March 31, 2024. I am open to have a new position.
+*Fall 2023*, Starting from Sep 1, I commenced a short term post-doc in ECE, University of Waterloo. 
 
 *Summer 2023*, I defended my PhD thesis [[Link to my thesis](https://uwspace.uwaterloo.ca/bitstream/handle/10012/19626/Luo_Guiwen.pdf?sequence=3&isAllowed=y)]
 
@@ -26,6 +27,7 @@ I am now working on *pairing-based cryptography*, *zkSNARKs* & *privacy-preservi
 #### - Email
 
 guiwen.luo@uwaterloo.ca
+guiwen_luo@163.com
 
 #### - Publications
 
@@ -63,4 +65,4 @@ You may also like to check [Guiwen Luo's Google Scholar](https://scholar.google.
 
 I love leisure cycling, long-distance running, rock climbing and swimming. 
 
-[Updated on Sep 18, 2023]
+[Updated on May 28, 2024]
