@@ -1,0 +1,69 @@
+/* Style the body */
+body {
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    max-width: 800px;
+}
+
+
+/* Style the header */
+header {
+    background-color: #ddd;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+/* Style the main section */
+main {
+    padding: 20px;
+}
+
+/* Style the publication section */
+#publications {
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Style the about_me section */
+#aboutme {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Style the teaching section */
+#teaching {
+    background-color: #ebe8e8dd;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Style the hobbies section */
+#hobbies {
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+a {
+    color: #50b3ff; /* change the text color */
+    text-decoration: none; /* remove underline */
+    border-bottom: 0px solid #5053ff; /* add a border bottom */
+    transition: all 0.2s ease-in-out; /* add transition */
+    font-size: 1em; /* set font size */
+}
+
+a:hover {
+    color: #364995; /* change the text color on hover */
+    border-bottom-color: #002fff; /* change the border color on hover */
+}
+
+/* Style the footer */
+footer {
+    background-color: #ddd;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+}
