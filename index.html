@@ -1,79 +1,280 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>My Homepage</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-
-	<style>
-		.intro-container {
-			display: flex;
-			align-items: center;
-		}
-
-		.image-container {
-			background-color: #eaeaea73;
-			padding: 0px;
-			display: block;
-		
-		}
-
-		.image-container img {
-			float: right;
-			border-radius: 0%;
-			display: block;
-			background-color: #eaeaeadd;
-		}
-	</style>
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Guiwen Luo — cryptography researcher.">
+	<meta name="color-scheme" content="light dark">
+	<title>Guiwen Luo</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header>
-		<h2>Guiwen Luo 罗贵文</h2>
+	<header class="global-nav" role="banner">
+		<div class="nav-inner">
+			<a class="nav-logo" href="#">Guiwen Luo</a>
+			<nav class="nav-links" aria-label="Primary">
+				<a href="#about">About</a>
+				<a href="#research">Research</a>
+				<a href="#publications">Publications</a>
+				<a href="#thesis-corrections">Thesis</a>
+				<a href="#news">News</a>
+				<a href="#teaching">Teaching</a>
+				<a href="#life">Life</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</div>
 	</header>
 
-		
-	<section class="intro-container">
-		<div id ="aboutme">
-		<p>I am a PhD student in the <a href="https://uwaterloo.ca/communications-security-lab/">ComSec</a> lab at University of Waterloo under the supervision of Prof. <a href="https://uwaterloo.ca/scholar/ggong">Guang Gong</a>. I got my MASc in Institute of Information Engineering from <a href="https://english.cas.cn/">Chinese Academy of Sciences</a>. I received my BS in Faculty of Mathematics from <a href="https://www.fudan.edu.cn/en/">Fudan University</a>.</p>
-		
-		<p>I am now working on <em>pairing-based cryptography</em>, <em>zkSNARKs</em> and <em>privacy-preserving blockchains</em>.</p>
+	<main>
+		<section class="hero" aria-label="Introduction">
+			<div class="hero-inner">
+				<div class="hero-copy">
+					<p class="hero-eyebrow">Cryptography · Security</p>
+					<h1 class="hero-title">Guiwen Luo</h1>
+					<p class="hero-subtitle">
+						Research engineer at IEIT Systems.<br>
+						Building practical tools in pairing-based crypto, zkSNARKs, and privacy-preserving blockchains.
+					</p>
+					<div class="hero-cta">
+						<a class="btn btn-primary" href="#publications">View publications</a>
+						<a class="btn btn-secondary" href="https://scholar.google.com/citations?hl=en&amp;user=kEuubvwAAAAJ">Google Scholar</a>
+					</div>
+				</div>
+				<figure class="hero-portrait">
+					<img src="smallguiwen.jpeg" alt="Portrait of Guiwen Luo" width="320" height="320">
+				</figure>
+			</div>
+		</section>
+
+		<section id="about" class="band">
+			<div class="band-inner">
+				<h2 class="band-headline">About</h2>
+				<p class="band-lead">
+					I work on cryptography systems that are rigorous enough for research and practical enough to ship.
+				</p>
+				<div class="prose">
+					<p>
+						I am a research engineer at <strong>IEIT Systems</strong>. My work focuses on
+						pairing-based cryptography, zkSNARKs, and privacy-preserving blockchains.
+					</p>
+					<p>
+						I was a PhD student in the
+						<a href="https://uwaterloo.ca/communications-security-lab/">ComSec</a> lab at the
+						<a href="https://uwaterloo.ca/">University of Waterloo</a>, supervised by Prof.
+						<a href="https://uwaterloo.ca/scholar/ggong">Guang Gong</a>.
+						I received my MASc from the
+						<a href="https://english.cas.cn/">Chinese Academy of Sciences</a>
+						and my BS from
+						<a href="https://www.fudan.edu.cn/en/">Fudan University</a>.
+					</p>
+					<p class="link-row">
+						<a href="https://github.com/LuoGuiwen">GitHub</a>
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="research" class="band band-alt">
+			<div class="band-inner">
+				<h2 class="band-headline">Research</h2>
+				<p class="band-lead">Areas I focus on today.</p>
+				<div class="tile-grid">
+					<article class="tile">
+						<h3>Applied cryptography</h3>
+						<p>Pairing-based cryptography, multi-scalar multiplication, and zkSNARK primitives.</p>
+					</article>
+					<article class="tile">
+						<h3>Blockchain security</h3>
+						<p>Privacy-preserving blockchains, membership proofs, and linear map commitments.</p>
+					</article>
+				</div>
+
+				<h3 class="subsection-title">Selected papers</h3>
+				<div class="card-stack">
+					<article class="card">
+						<p class="card-year">2022</p>
+						<h4 class="card-title">
+							<a href="https://tches.iacr.org/index.php/TCHES/article/view/10287">Speeding Up Multi-Scalar Multiplication over Fixed Points Towards Efficient zkSNARKs</a>
+						</h4>
+						<p class="card-meta"><strong>Luo, G.</strong>, Fu, S., &amp; Gong, G. · TCHES 2023/2</p>
+					</article>
+					<article class="card">
+						<p class="card-year">2022</p>
+						<h4 class="card-title">
+							<a href="publications/stinson66%20publish%20version%20using%20recommanded%20template.pdf">On the Optimization of Pippenger's Bucket Method with Precomputation</a>
+						</h4>
+						<p class="card-meta"><strong>Luo, G.</strong>, &amp; Gong, G. · Stinson66 (accepted)</p>
+					</article>
+					<article class="card">
+						<p class="card-year">2021</p>
+						<h4 class="card-title">
+							<a href="publications/Updatable_Linear_Map_Commitments_and_Their_Applications_in_Elementary_Databases.pdf">Updatable Linear Map Commitments and Their Applications in Elementary Databases</a>
+						</h4>
+						<p class="card-meta"><strong>Luo, G.</strong>, Fu, S., &amp; Gong, G. · IEEE PST 2021</p>
+					</article>
+				</div>
+				<p class="band-foot">
+					<a class="text-link" href="#publications">See all publications →</a>
+				</p>
+			</div>
+		</section>
+
+		<section id="publications" class="band">
+			<div class="band-inner band-inner-wide">
+				<h2 class="band-headline">Publications</h2>
+				<p class="band-lead">Complete list.</p>
+				<ul class="pub-list">
+					<li class="pub-item">
+						<span class="pub-year">2022</span>
+						<div class="pub-body">
+							<p class="pub-title"><a href="https://tches.iacr.org/index.php/TCHES/article/view/10287">Speeding Up Multi-Scalar Multiplication over Fixed Points Towards Efficient zkSNARKs</a></p>
+							<p class="pub-meta"><strong>Luo, G.</strong>, Fu, S., &amp; Gong, G. · <em>TCHES</em> 2023/2</p>
+						</div>
+					</li>
+					<li class="pub-item">
+						<span class="pub-year">2022</span>
+						<div class="pub-body">
+							<p class="pub-title"><a href="publications/stinson66%20publish%20version%20using%20recommanded%20template.pdf">On the Optimization of Pippenger's Bucket Method with Precomputation</a></p>
+							<p class="pub-meta"><strong>Luo, G.</strong>, &amp; Gong, G. · Stinson66 (accepted)</p>
+						</div>
+					</li>
+					<li class="pub-item">
+						<span class="pub-year">2021</span>
+						<div class="pub-body">
+							<p class="pub-title"><a href="publications/Updatable_Linear_Map_Commitments_and_Their_Applications_in_Elementary_Databases.pdf">Updatable Linear Map Commitments and Their Applications in Elementary Databases</a></p>
+							<p class="pub-meta"><strong>Luo, G.</strong>, Fu, S., &amp; Gong, G. · IEEE PST</p>
+						</div>
+					</li>
+					<li class="pub-item">
+						<span class="pub-year">2021</span>
+						<div class="pub-body">
+							<p class="pub-title"><a href="publications/Batching_Anonymous_and_Non-Anonymous_Membership_Proofs_for_Blockchain_Applications.pdf">Batching Anonymous and Non-anonymous Membership Proofs for Blockchain Applications</a></p>
+							<p class="pub-meta">Fu, S., <strong>Luo, G.</strong>, &amp; Gong, G. · IEEE AIIoT</p>
+						</div>
+					</li>
+					<li class="pub-item">
+						<span class="pub-year">2019</span>
+						<div class="pub-body">
+							<p class="pub-title"><a href="publications/Codes%2C%20Cryptology%20and%20Information%20Security.pdf">Faster Scalar Multiplication on the x-Line: Three-Dimensional GLV Method with Three-Dimensional Differential Addition Chains</a></p>
+							<p class="pub-meta">Yi, H., <strong>Luo, G.</strong>, &amp; Lin, D. · Springer</p>
+						</div>
+					</li>
+					<li class="pub-item">
+						<span class="pub-year">2018</span>
+						<div class="pub-body">
+							<p class="pub-title"><a href="publications/Searching%20BN%20Curves%20for%20SM9.pdf">Searching BN Curves for SM9</a></p>
+							<p class="pub-meta"><strong>Luo, G.</strong>, &amp; Chen, X. · Springer</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="thesis-corrections" class="band band-alt">
+			<div class="band-inner band-inner-wide">
+				<h2 class="band-headline">Corrections to My PhD Thesis</h2>
+				<p class="band-lead band-lead-left">
+					You can check my PhD thesis,
+					<em>On the Computation of Multi-Scalar Multiplication for Pairing-Based zkSNARKs</em>,
+					via
+					<a id="thesis-link" href="https://uwspace.uwaterloo.ca/items/1624ffd2-7322-4dbc-9170-f2d6f92ba896">UWSpace</a>
+					(PDF available for download).
+				</p>
+
+				<ol class="errata-list">
+					<li class="errata-item">
+						<p class="errata-location"><strong>Page 21</strong></p>
+						<p class="errata-detail">“Silimar” should be “Similar”.</p>
+					</li>
+					<li class="errata-item">
+						<p class="errata-location"><strong>Page 52</strong></p>
+						<p class="errata-detail">
+							Inside Algorithm 7, change <code>B<sub>0</sub></code> to <code>B<sub>1</sub></code> in Line 3 and Line 6.
+						</p>
+						<ul class="errata-sublist">
+							<li>
+								Algorithm 7, Line 3 should be:
+								<blockquote class="errata-quote">
+									if <em>i</em> is in <code>B<sub>1</sub></code> and <em>q</em> − 2<em>i</em> is in <code>B<sub>1</sub></code> then
+								</blockquote>
+							</li>
+							<li>
+								Algorithm 7, Line 6 should be:
+								<blockquote class="errata-quote">
+									if <em>i</em> is in <code>B<sub>1</sub></code> and <em>q</em> − 3<em>i</em> is in <code>B<sub>1</sub></code> then
+								</blockquote>
+							</li>
+						</ul>
+					</li>
+				</ol>
+
+				<p class="errata-invite">
+					Please let me know if you discover any new errors, and I will acknowledge you on this page.
+				</p>
+			</div>
+		</section>
+
+		<section id="news" class="band">
+			<div class="band-inner">
+				<h2 class="band-headline">News</h2>
+				<ul class="timeline">
+					<li><time>Fall 2021</time><span>Passed comprehensive exam II (PhD proposal).</span></li>
+					<li><time>Fall 2020</time><span>Passed comprehensive exam I (background examination).</span></li>
+					<li><time>Fall 2019</time><span>Started PhD at University of Waterloo.</span></li>
+					<li><time>Summer 2019</time><span>Completed MASc at Chinese Academy of Sciences.</span></li>
+					<li><time>Summer 2016</time><span>Completed BS at Fudan University.</span></li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="teaching" class="band band-compact">
+			<div class="band-inner">
+				<h2 class="band-headline">Teaching</h2>
+				<ul class="timeline">
+					<li><time>Winter 2023</time><span>TA, <em>ECE 409 — Cryptography and System Security</em></span></li>
+					<li><time>Fall 2022</time><span>TA, <em>ECE 307 — Probability Theory and Statistics 2</em></span></li>
+					<li><time>Spring 2022</time><span>TA, <em>ECE 458 — Computer Security</em></span></li>
+					<li><time>Winter 2022</time><span>TA, <em>ECE 409 — Cryptography and System Security</em></span></li>
+					<li><time>Spring 2020</time><span>TA, <em>ECE 458 — Computer Security</em></span></li>
+					<li><time>Winter 2020</time><span>Volunteer, ECE Volunteer Mentorship Program</span></li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="life" class="band band-alt">
+			<div class="band-inner">
+				<h2 class="band-headline">Beyond the lab</h2>
+				<p class="band-lead">Cycling, running, rock climbing, and swimming.</p>
+				<div class="gallery">
+					<a class="gallery-item" href="pics/rockclimbing1.JPG">
+						<img src="pics/rockclimbing1.JPG" alt="Rock climbing" loading="lazy">
+						<span>Rock climbing</span>
+					</a>
+					<a class="gallery-item" href="pics/running1.jpg">
+						<img src="pics/running1.jpg" alt="Running" loading="lazy">
+						<span>Running</span>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="band band-contact">
+			<div class="band-inner band-inner-narrow">
+				<h2 class="band-headline">Get in touch</h2>
+				<p class="contact-email">
+					<a id="email-link" class="email-display" href="#" data-user="guiwen.luo" data-domain="uwaterloo.ca"></a>
+				</p>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="footer-inner">
+			<p>© 2018–2026 Guiwen Luo</p>
+			<p class="footer-meta">Last updated May 2026</p>
 		</div>
-
-		<div class="image-container">
-			<img src="smallguiwen.jpeg" alt="My Image" width = px>
-		</div>
-	</section>
-
-
-	<section id="publications">
-		<h2>Publications</h2>
-		<ul>
-			<li>Publication 1</li>
-			<li>Publication 2</li>
-			<li>Publication 3</li>
-		</ul>
-	</section>
-
-	<section id="teaching">
-		<h2>Teaching</h2>
-		<ul>
-			<li>Course 1</li>
-			<li>Course 2</li>
-			<li>Course 3</li>
-		</ul>
-	</section>
-
-	<section id="hobbies">
-		<h2>Hobbies</h2>
-		<ul>
-			<li>Hobby 1</li>
-			<li>Hobby 2</li>
-			<li>Hobby 3</li>
-		</ul>
-	</section>
-
-	<footer>
-		<p>Last update: Jan, 2023</p>
 	</footer>
+
+	<script src="script.js"></script>
 </body>
 </html>
