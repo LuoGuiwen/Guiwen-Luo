@@ -11,6 +11,9 @@
 
 	function setNavOpen(open) {
 		var compact = isNavCompact();
+		if (open && compact) {
+			document.documentElement.classList.remove("nav-resizing");
+		}
 		document.documentElement.classList.toggle("nav-open", open && compact);
 		if (navDrawer) {
 			navDrawer.setAttribute("aria-hidden", open && compact ? "false" : compact ? "true" : "false");
@@ -49,17 +52,19 @@
 	var NAV_COLLAPSE_BUFFER = 2;
 	var NAV_EXPAND_SLACK = 12;
 
-	function navRowWidth(navInner, logo) {
-		var innerStyle = getComputedStyle(navInner);
-		var gap = parseFloat(innerStyle.columnGap || innerStyle.gap) || 0;
+	function navRowWidth(siteTopEl, logo) {
+		var topStyle = getComputedStyle(siteTopEl);
+		var gap = parseFloat(topStyle.columnGap || topStyle.gap) || 0;
 		var logoW = logo ? logo.offsetWidth : 0;
 		var linksW = measureInlineLinksWidth();
 		return logoW + (logoW > 0 && linksW > 0 ? gap : 0) + linksW;
 	}
 
-	function navFitsOneRow(navInner, logo, isInline) {
-		var needed = navRowWidth(navInner, logo);
-		var available = navInner.clientWidth;
+	function navFitsOneRow(siteTopEl, logo, isInline) {
+		var topStyle = getComputedStyle(siteTopEl);
+		var padX = parseFloat(topStyle.paddingLeft) + parseFloat(topStyle.paddingRight);
+		var needed = navRowWidth(siteTopEl, logo);
+		var available = siteTopEl.clientWidth - padX;
 
 		if (isInline) {
 			return needed <= available - NAV_COLLAPSE_BUFFER;
@@ -68,14 +73,16 @@
 	}
 
 	function updateNavLayout() {
-		var navInner = document.querySelector(".nav-inner");
 		var logo = document.querySelector(".nav-logo");
-		if (!siteTop || !navLinks || !navInner) return;
+		if (!siteTop || !navLinks || !logo) return;
 
-		var isInline = siteTop.classList.contains("nav--inline");
-		var fits = navFitsOneRow(navInner, logo, isInline);
+		var wasInline = siteTop.classList.contains("nav--inline");
+		siteTop.classList.add("nav--inline");
+		void siteTop.offsetHeight;
 
-		if (fits !== isInline) {
+		var fits = navFitsOneRow(siteTop, logo, wasInline);
+
+		if (fits !== wasInline) {
 			if (!fits) {
 				document.documentElement.classList.remove("nav-open");
 				if (navDrawer) {
@@ -93,6 +100,8 @@
 			} else {
 				siteTop.classList.add("nav--inline");
 			}
+		} else {
+			siteTop.classList.toggle("nav--inline", fits);
 		}
 
 		if (fits) {
@@ -106,9 +115,7 @@
 	}
 
 	if (siteTop && navLinks) {
-		var navInnerEl = document.querySelector(".nav-inner");
 		var layoutTimer = 0;
-		var resizeActive = false;
 
 		function setNavResizing(active) {
 			document.documentElement.classList.toggle("nav-resizing", active);
@@ -124,30 +131,25 @@
 				return;
 			}
 
-			if (!resizeActive) {
-				resizeActive = true;
-				setNavResizing(true);
-				setNavOpen(false);
-			}
-
 			clearTimeout(layoutTimer);
 			layoutTimer = setTimeout(function () {
-				resizeActive = false;
 				setNavResizing(false);
 				updateNavLayout();
 			}, 180);
 		}
 
-		if (navInnerEl && "ResizeObserver" in window) {
+		if ("ResizeObserver" in window) {
 			var layoutObserver = new ResizeObserver(function () {
 				scheduleNavLayout(false);
 			});
-			layoutObserver.observe(navInnerEl);
-		} else {
-			window.addEventListener("resize", function () {
-				scheduleNavLayout(false);
-			});
+			layoutObserver.observe(siteTop);
 		}
+
+		window.addEventListener("resize", function () {
+			setNavResizing(true);
+			setNavOpen(false);
+			scheduleNavLayout(false);
+		});
 
 		window.addEventListener("load", function () {
 			scheduleNavLayout(true);
