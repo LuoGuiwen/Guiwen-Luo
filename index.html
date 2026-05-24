@@ -9,20 +9,27 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header class="global-nav" role="banner">
-		<div class="nav-inner">
-			<a class="nav-logo" href="#">Guiwen Luo</a>
-			<nav class="nav-links" aria-label="Primary">
-				<a href="#about">About</a>
-				<a href="#publications">Publications</a>
-				<a href="#thesis-corrections">Thesis</a>
-				<a href="#updates">Updates</a>
-				<a href="#teaching">Teaching</a>
-				<a href="#hobbies">Hobbies</a>
-				<a href="#contact">Contact</a>
-			</nav>
-		</div>
-	</header>
+	<div class="site-top">
+		<header class="global-nav" role="banner">
+			<div class="nav-inner">
+				<a class="nav-logo" href="#">Guiwen Luo</a>
+				<nav id="nav-drawer" class="nav-drawer" aria-label="Primary" aria-hidden="true">
+					<div class="nav-links">
+						<a href="#about">About</a>
+						<a href="#publications">Publications</a>
+						<a href="#thesis-corrections">Thesis</a>
+						<a href="#updates">Updates</a>
+						<a href="#teaching">Teaching</a>
+						<a href="#hobbies">Hobbies</a>
+						<a href="#contact">Contact</a>
+					</div>
+				</nav>
+				<button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
+					<span class="nav-toggle-icon" aria-hidden="true"></span>
+				</button>
+			</div>
+		</header>
+	</div>
 
 	<main>
 		<section class="hero" aria-label="Introduction">
@@ -204,7 +211,7 @@
 				<p class="band-lead">Cycling, running, rock climbing, and swimming.</p>
 				<div class="gallery">
 					<a class="gallery-item" href="pics/rockclimbing1.JPG">
-						<img src="pics/rockclimbing1.JPG" alt="Rock climbing" width="1200" height="677" loading="lazy" decoding="async">
+						<img src="pics/rockclimbing1.JPG" alt="Rock climbing" width="1000" height="1772" loading="lazy" decoding="async">
 						<span>Rock climbing</span>
 					</a>
 					<a class="gallery-item" href="pics/running1.jpg">

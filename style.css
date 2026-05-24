@@ -86,24 +86,68 @@ a {
 }
 
 /* —— Global nav (Apple.com style) —— */
-.global-nav {
+.site-top {
 	position: sticky;
 	top: 0;
-	z-index: 100;
+	z-index: 1000;
+	background: var(--bg);
+	border-bottom: 1px solid var(--border);
+}
+
+.global-nav {
 	background: var(--nav-bg);
 	backdrop-filter: saturate(180%) blur(20px);
 	-webkit-backdrop-filter: saturate(180%) blur(20px);
-	border-bottom: 1px solid var(--border);
 }
 
 .nav-inner {
 	max-width: var(--max);
 	margin: 0 auto;
-	padding: 0.6rem 1rem 0.5rem;
+	padding: 0 1rem;
+	height: 48px;
 	display: flex;
-	flex-direction: column;
-	align-items: stretch;
-	gap: 0.5rem;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+	position: relative;
+	z-index: 1002;
+}
+
+.site-top:not(.nav--inline) .nav-toggle {
+	margin-left: auto;
+}
+
+.site-top.nav--inline .nav-drawer {
+	flex: 1 1 auto;
+	min-width: 0;
+	position: static;
+	visibility: visible;
+	opacity: 1;
+	pointer-events: auto;
+	background: transparent;
+	z-index: auto;
+}
+
+.site-top.nav--inline .nav-drawer .nav-links {
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: nowrap;
+	gap: 0 1.25rem;
+	width: 100%;
+	min-width: 0;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+	max-width: none;
+	overflow: hidden;
+}
+
+.site-top.nav--inline .nav-drawer .nav-links a {
+	font-size: 0.75rem;
+	font-weight: 500;
+	padding: 0;
+	letter-spacing: -0.01em;
 }
 
 .nav-logo {
@@ -121,24 +165,152 @@ a {
 	opacity: 0.8;
 }
 
+/* Menu button (compact / hamburger mode) */
+.site-top:not(.nav--inline) .nav-toggle {
+	display: flex;
+}
+
+.nav-toggle {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	width: 2.75rem;
+	height: 2.75rem;
+	margin: 0 -0.5rem 0 0;
+	padding: 0;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.nav-toggle-icon {
+	position: relative;
+	width: 1.125rem;
+	height: 1px;
+	background: var(--text);
+	border-radius: 1px;
+	transition: background 0.2s ease;
+}
+
+.nav-toggle-icon::before,
+.nav-toggle-icon::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: var(--text);
+	border-radius: 1px;
+	transition: transform 0.25s ease, top 0.25s ease;
+}
+
+.nav-toggle-icon::before {
+	top: -6px;
+}
+
+.nav-toggle-icon::after {
+	top: 6px;
+}
+
+.nav-open .nav-toggle-icon {
+	background: transparent;
+}
+
+.nav-open .nav-toggle-icon::before {
+	top: 0;
+	transform: rotate(45deg);
+}
+
+.nav-open .nav-toggle-icon::after {
+	top: 0;
+	transform: rotate(-45deg);
+}
+
+/* Compact drawer (when links do not fit one row) — hidden until hamburger opens */
+.site-top:not(.nav--inline) .nav-drawer {
+	display: none;
+	position: fixed;
+	top: 48px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1001;
+	height: auto;
+	background: var(--bg);
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.site-top.nav-mode-switch .nav-drawer {
+	display: none !important;
+	visibility: hidden !important;
+	opacity: 0 !important;
+	pointer-events: none !important;
+}
+
+/* No full-screen drawer flash while the window is being resized */
+html.nav-resizing .site-top:not(.nav--inline) .nav-drawer {
+	display: none !important;
+	transition: none;
+	visibility: hidden !important;
+	opacity: 0 !important;
+	pointer-events: none !important;
+}
+
+html.nav-resizing.nav-open .site-top:not(.nav--inline) .nav-drawer {
+	visibility: hidden !important;
+	opacity: 0 !important;
+}
+
+html.nav-open .site-top:not(.nav--inline) .nav-drawer {
+	display: block;
+	visibility: visible;
+	opacity: 1;
+	pointer-events: auto;
+	transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.site-top:not(.nav--inline) .nav-drawer .nav-links {
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0;
+	margin: 0 auto;
+	padding: 2rem 1.75rem;
+	max-width: var(--max);
+	width: 100%;
+	min-height: calc(100vh - 48px);
+	min-height: calc(100dvh - 48px);
+	box-sizing: border-box;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.site-top:not(.nav--inline) .nav-drawer .nav-links a {
+	font-size: clamp(1.5rem, 5vw, 1.85rem);
+	font-weight: 600;
+	letter-spacing: -0.02em;
+	line-height: 1.2;
+	padding: 0.55rem 0;
+}
+
+.nav-drawer .nav-links a:hover,
+.nav-drawer .nav-links a.is-active {
+	color: var(--text);
+	text-decoration: none;
+}
+
+.nav-open {
+	overflow: hidden;
+}
+
+/* Desktop inline nav */
 .nav-links {
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: center;
-	width: 100%;
-	max-width: 100%;
-	min-width: 0;
-	gap: 0 1rem;
-	overflow-x: auto;
-	overflow-y: hidden;
-	-webkit-overflow-scrolling: touch;
-	scrollbar-width: none;
-	overscroll-behavior-x: contain;
-	touch-action: pan-x;
-}
-
-.nav-links::-webkit-scrollbar {
-	display: none;
+	gap: 0 1.25rem;
 }
 
 .nav-links a {
@@ -758,40 +930,34 @@ a {
 	}
 }
 
-/* Wide screens: logo and links on one row */
-@media (min-width: 840px) {
-	.nav-inner {
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
-		gap: 1.5rem;
-		padding: 0 1.5rem;
-		height: 48px;
-	}
-
-	.nav-links {
-		width: auto;
-		flex: 1;
-		justify-content: flex-end;
-		gap: 0 1.25rem;
-		padding: 0;
-	}
-
-	.nav-links a {
-		font-size: 0.75rem;
-	}
+.site-top.nav--inline .nav-toggle {
+	display: none;
 }
 
-/* Phones: slightly larger tap targets */
-@media (max-width: 839px) {
-	.nav-links {
-		padding-bottom: 0.15rem;
-	}
+.nav-measure-probe {
+	position: absolute;
+	left: -9999px;
+	top: 0;
+	width: auto;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	pointer-events: none;
+}
 
-	.nav-links a {
-		font-size: 0.8rem;
-		padding: 0.2rem 0;
-	}
+.nav-measure-row {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	gap: 0 1.25rem;
+}
+
+.nav-measure-link {
+	flex-shrink: 0;
+	white-space: nowrap;
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: -0.01em;
 }
 
 @media (max-width: 640px) {
@@ -821,5 +987,13 @@ a {
 	.gallery-item:hover img,
 	.btn:hover {
 		transform: none;
+	}
+
+	.nav-drawer,
+	.nav-toggle-icon,
+	.nav-toggle-icon::before,
+	.nav-toggle-icon::after,
+	html.nav-resizing .nav-drawer {
+		transition: none;
 	}
 }
