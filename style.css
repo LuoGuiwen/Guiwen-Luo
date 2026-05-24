@@ -95,9 +95,19 @@ a {
 }
 
 .global-nav {
+	position: relative;
+	background: var(--nav-bg);
+}
+
+.global-nav::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: -1;
 	background: var(--nav-bg);
 	backdrop-filter: saturate(180%) blur(20px);
 	-webkit-backdrop-filter: saturate(180%) blur(20px);
+	pointer-events: none;
 }
 
 .nav-inner {
@@ -117,7 +127,33 @@ a {
 	margin-left: auto;
 }
 
+.site-top.nav--inline {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	max-width: var(--max);
+	margin: 0 auto;
+	padding: 0 1rem;
+	box-sizing: border-box;
+}
+
+.site-top.nav--inline .global-nav {
+	flex: 0 0 auto;
+	background: transparent;
+}
+
+.site-top.nav--inline .global-nav::before {
+	display: none;
+}
+
+.site-top.nav--inline .nav-inner {
+	flex: 0 0 auto;
+	max-width: none;
+	padding: 0;
+}
+
 .site-top.nav--inline .nav-drawer {
+	display: block;
 	flex: 1 1 auto;
 	min-width: 0;
 	position: static;
@@ -235,7 +271,7 @@ a {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	z-index: 1001;
+	z-index: 1100;
 	height: auto;
 	background: var(--bg);
 	visibility: hidden;
@@ -259,17 +295,21 @@ html.nav-resizing .site-top:not(.nav--inline) .nav-drawer {
 	pointer-events: none !important;
 }
 
-html.nav-resizing.nav-open .site-top:not(.nav--inline) .nav-drawer {
-	visibility: hidden !important;
-	opacity: 0 !important;
-}
-
 html.nav-open .site-top:not(.nav--inline) .nav-drawer {
 	display: block;
 	visibility: visible;
 	opacity: 1;
 	pointer-events: auto;
 	transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+html.nav-open .site-top {
+	z-index: 1100;
+}
+
+html.nav-open .nav-inner {
+	position: relative;
+	z-index: 1101;
 }
 
 .site-top:not(.nav--inline) .nav-drawer .nav-links {
