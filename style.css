@@ -816,7 +816,13 @@ html.nav-open .site-top:not(.nav--inline) .nav-drawer {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	object-position: center;
 	transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.gallery-item--focus-top img {
+	object-position: top center;
+	transform-origin: top center;
 }
 
 .gallery-item span {
