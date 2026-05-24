@@ -1,14 +1,11 @@
 (function () {
-	var link = document.getElementById("email-link");
-	if (link) {
+	document.querySelectorAll(".email-display[data-user][data-domain]").forEach(function (link) {
 		var user = link.getAttribute("data-user");
 		var domain = link.getAttribute("data-domain");
-		if (user && domain) {
-			var addr = user + "@" + domain;
-			link.href = "mailto:" + addr;
-			link.textContent = addr;
-		}
-	}
+		var addr = user + "@" + domain;
+		link.href = "mailto:" + addr;
+		link.textContent = addr;
+	});
 
 	// Nav highlight on scroll
 	var sections = document.querySelectorAll("main section[id]");
@@ -32,10 +29,25 @@
 		});
 	}
 
-	// Subtle scroll-in (Apple-style section reveals)
+	// Subtle scroll-in (skip contact — hash jumps left it invisible)
 	var revealTargets = document.querySelectorAll(
-		".band-inner, .hero-inner, .card, .tile, .gallery-item"
+		".band-inner:not(.band-inner-narrow), .hero-inner, .card, .tile, .gallery-item"
 	);
+
+	function showReveal(el) {
+		el.classList.add("reveal", "is-visible");
+	}
+
+	function markRevealsInView() {
+		revealTargets.forEach(function (el) {
+			if (el.classList.contains("is-visible")) return;
+			var rect = el.getBoundingClientRect();
+			if (rect.top < window.innerHeight * 0.92 && rect.bottom > 0) {
+				el.classList.add("is-visible");
+			}
+		});
+	}
+
 	revealTargets.forEach(function (el) {
 		el.classList.add("reveal");
 	});
@@ -54,9 +66,9 @@
 		revealTargets.forEach(function (el) {
 			revealObserver.observe(el);
 		});
+		markRevealsInView();
+		window.addEventListener("load", markRevealsInView);
 	} else {
-		revealTargets.forEach(function (el) {
-			el.classList.add("is-visible");
-		});
+		revealTargets.forEach(showReveal);
 	}
 })();
