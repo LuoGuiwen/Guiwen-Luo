@@ -848,6 +848,10 @@ html.nav-open .nav-inner {
 	transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
+.gallery-item--motorcycling img {
+	object-position: center 65%;
+}
+
 .gallery-item--focus-top img {
 	object-position: top center;
 	transform-origin: top center;
