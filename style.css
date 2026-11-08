@@ -826,7 +826,7 @@ html.nav-open .nav-inner {
 /* —— Gallery —— */
 .gallery {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	grid-template-columns: minmax(0, 1fr);
 	gap: 1rem;
 	margin-top: 1rem;
 }
@@ -848,8 +848,30 @@ html.nav-open .nav-inner {
 	transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.gallery-item--motorcycling img {
-	object-position: center 65%;
+.gallery-item--motorcycling {
+	aspect-ratio: 802 / 1200;
+}
+
+@media (min-width: 768px) {
+	.gallery {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-template-rows: repeat(2, minmax(0, 1fr));
+	}
+
+	.gallery-item {
+		min-height: 0;
+		aspect-ratio: auto;
+	}
+
+	.gallery-item--motorcycling {
+		grid-column: 1;
+		grid-row: 1 / 3;
+		aspect-ratio: 802 / 1200;
+	}
+
+	.gallery-item:not(.gallery-item--motorcycling) {
+		grid-column: 2;
+	}
 }
 
 .gallery-item--focus-top img {
